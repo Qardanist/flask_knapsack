@@ -1,7 +1,7 @@
 import random
 
 def genetic_algorithm(items, max_weight):
-    # تهيئة السكان
+    
     population_size = 100
     generations = 50
     population = [random.choices([0, 1], k=len(items)) for _ in range(population_size)]
@@ -24,7 +24,7 @@ def genetic_algorithm(items, max_weight):
             offspring.append(child1)
             offspring.append(child2)
         population.extend(offspring)
-        # تطبيق الطفرة
+        
         for individual in population:
             if random.random() < 0.1:
                 mutation_point = random.randint(0, len(items) - 1)
