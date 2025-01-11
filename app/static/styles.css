@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.input-section, .output-section, .add-item-section, .info-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: dimgray;
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+button {
+    background-color: mediumseagreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: seagreen;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    background-color: aliceblue;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
+
+.info-link a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.info-link a:hover {
+    background-color: deepskyblue;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select, button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* تحسينات للشاشات الكبيرة */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}
